@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Brotli'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'An NSData category pod that provides Brotli compression and decompression for iOS'
 
 # This description is used to generate tags and improve search results.
@@ -25,10 +25,12 @@ An NSData category pod that provides Brotli compression and decompression for iO
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Karl von Randow' => 'karl@xk72.com' }
-  s.source           = { :git => 'https://github.com/karlvr/Brotli.git', :tag => s.version.to_s, :submodules => true }
+  s.source           = { :git => 'https://github.com/cute/Brotli.git', :tag => s.version.to_s, :submodules => true }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = "8.0"
+  s.osx.deployment_target = "10.7"
+  s.watchos.deployment_target = "2.0"
 
   s.source_files = 'Brotli/Classes/**/*', 'Brotli/Source/c/common/*.c', 'Brotli/Source/c/dec/*.c', 'Brotli/Source/c/enc/*.c'
   s.compiler_flags = '-Wno-unreachable-code'
