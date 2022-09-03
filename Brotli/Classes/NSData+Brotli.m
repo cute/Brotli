@@ -7,9 +7,6 @@
 
 #import "NSData+Brotli.h"
 
-#import <brotli/decode.h>
-#import <brotli/encode.h>
-
 @implementation NSData (Brotli)
 
 - (NSData *)brotliCompressed {

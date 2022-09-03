@@ -6,6 +6,8 @@
 //
 
 #include <Foundation/Foundation.h>
+#import <brotli/decode.h>
+#import <brotli/encode.h>
 
 @interface NSData (Brotli)
 
