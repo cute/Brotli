@@ -39,5 +39,5 @@ An NSData category pod that provides Brotli compression and decompression for iO
   }
   s.preserve_paths = 'Brotli/Source/c/common/*.h', 'Brotli/Source/c/dec/*.h', 'Brotli/Source/c/enc/*.h', 'Brotli/Source/c/include/**/*'
 
-  s.public_header_files = 'Brotli/Classes/**/*.h'
+  s.public_header_files = 'Brotli/Classes/**/*.h', 'Brotli/Source/c/include/**/*.h'
 end
